@@ -1,7 +1,9 @@
 #include <stdlib.h>
-#include  <stdio.h>
+#include <stdio.h>
+#include <string.h>
 #include "interface.h"
 #include "enums.h"
+#include "structs.h"
 
 int main(int argc, char const *argv[])
 {
@@ -9,6 +11,10 @@ int main(int argc, char const *argv[])
     switch(choice) {
         case shoppingList:
             printf("%s\n", "LISTA ZAKUPOW");
+            shop_item item;
+            item.id = 0;
+            strcpy(item.name, "Produkt testowy");
+            printf("ID: %d | %s \n", item.id, item.name);
             break;
         case shopingHistory:
             printf("%s\n", "HISTORIA ZAKUPOW");
