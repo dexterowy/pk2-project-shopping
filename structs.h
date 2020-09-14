@@ -7,7 +7,7 @@ typedef struct {
 } shop_item;
 
 typedef struct shopping_list_item{
-    shop_item* pItem;
+    shop_item* pItem ;
     struct shopping_list_item* pNext;
 } shopping_list_item;
 
