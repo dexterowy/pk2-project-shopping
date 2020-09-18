@@ -17,7 +17,7 @@ shopping_list_item * getShoppingListFromFile(char *filename) {
     listFile = fopen(filename, "r");
 
     if(listFile == NULL) {
-        // printf("%s", "Nie udalo sie wczytac pliku");
+        printf("%s", "Nie udalo sie otworzyc pliku\n");
         return NULL;
     }
 
@@ -35,10 +35,8 @@ shopping_list_item * getShoppingListFromFile(char *filename) {
         trimLine(name);
         strcpy(item->name, name);
         pNode->pItem = item;
-        // renderShopItem(pNode->pItem);
         pPrev = pNode;
    }
-    // printf("\n%d", pHead);
     fclose(listFile);
     return pHead;
 }
@@ -165,7 +163,6 @@ shopping_list_item *handleCreateShoppingItem(shopping_list_item *pHead) {
     strcpy(pItem->name, name);
     // Add new item to list
     shopping_list_item *newHead = addShopingItemToList(pHead, pItem);
-    // saveShoppingListIntoFile(newHead, "test.txt");
     return newHead;
 }
 

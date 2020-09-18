@@ -31,7 +31,7 @@ history_list_item * getHistoryListFromFile(char *filename) {
     listFile = fopen(filename, "r");
 
     if(listFile == NULL) {
-        // printf("%s", "Nie udalo sie wczytac pliku");
+        printf("%s", "Nie udalo sie wczytac pliku\n");
         return NULL;
     }
 
@@ -58,7 +58,6 @@ history_list_item * getHistoryListFromFile(char *filename) {
         pNode->pDate = date;
         pPrev = pNode;
    }
-    // printf("\n%d", pHead);
     fclose(listFile);
     return pHead;
 }
