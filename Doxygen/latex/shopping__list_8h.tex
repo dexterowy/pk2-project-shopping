@@ -1,0 +1,161 @@
+\doxysection{Dokumentacja pliku shopping\+\_\+list.\+h}
+\label{shopping__list_8h}\index{shopping\_list.h@{shopping\_list.h}}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ shopping\+List\+Handler} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$p\+Head, \textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$p\+History\+List)
+\item 
+\textbf{ shopping\+\_\+list\+\_\+item} $\ast$ \textbf{ get\+Shopping\+List\+From\+File} (char $\ast$filename)
+\item 
+void \textbf{ save\+Shopping\+List\+Into\+File} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$p\+Head, char $\ast$filename)
+\item 
+\textbf{ shopping\+\_\+list\+\_\+item} $\ast$ \textbf{ add\+Shoping\+Item\+To\+List} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$p\+Head, \textbf{ shop\+\_\+item} $\ast$p\+Item)
+\item 
+\textbf{ shopping\+\_\+list\+\_\+item} $\ast$ \textbf{ handle\+Create\+Shopping\+Item} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$p\+Head)
+\item 
+\textbf{ shopping\+\_\+list\+\_\+item} $\ast$ \textbf{ remove\+From\+Shopping\+List} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$p\+Head, int id)
+\item 
+\textbf{ shopping\+\_\+list\+\_\+item} $\ast$ \textbf{ handle\+Remove\+From\+Shopping\+List} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$p\+Head)
+\item 
+\textbf{ shop\+\_\+item} $\ast$ \textbf{ detach\+Item\+From\+Shopping\+List} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$p\+Head, int id)
+\item 
+void \textbf{ handle\+Mark\+As\+Bought} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$p\+Shopping\+List, \textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$p\+History\+List)
+\item 
+void \textbf{ delete\+Shopping\+List} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$p\+Head)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\label{shopping__list_8h_abba3bea600b850eb4a97b2fe4abbf552}} 
+\index{shopping\_list.h@{shopping\_list.h}!addShopingItemToList@{addShopingItemToList}}
+\index{addShopingItemToList@{addShopingItemToList}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{addShopingItemToList()}
+{\footnotesize\ttfamily \textbf{ shopping\+\_\+list\+\_\+item}$\ast$ add\+Shoping\+Item\+To\+List (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{\textbf{ shop\+\_\+item} $\ast$}]{p\+Item }\end{DoxyParamCaption})}
+
+Funkcja dodajaca przedmiot na poczatek listy zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy zakupow \\
+\hline
+{\em p\+Item} & wskaznik na przedmiot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na nowy poczatek listy zakupow 
+\end{DoxyReturn}
+\mbox{\label{shopping__list_8h_aa6b1c2b29133d14545a39b31ad0a1af6}} 
+\index{shopping\_list.h@{shopping\_list.h}!deleteShoppingList@{deleteShoppingList}}
+\index{deleteShoppingList@{deleteShoppingList}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{deleteShoppingList()}
+{\footnotesize\ttfamily void delete\+Shopping\+List (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja usuwajaca dynamicznie zaalokowana pamiec 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na wskaznik poczatku listy zakupow \\
+\hline
+\end{DoxyParams}
+\mbox{\label{shopping__list_8h_a5554a1593a126a8f71aed15fa68c9893}} 
+\index{shopping\_list.h@{shopping\_list.h}!detachItemFromShoppingList@{detachItemFromShoppingList}}
+\index{detachItemFromShoppingList@{detachItemFromShoppingList}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{detachItemFromShoppingList()}
+{\footnotesize\ttfamily \textbf{ shop\+\_\+item}$\ast$ detach\+Item\+From\+Shopping\+List (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+Head,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Funkcja usuwajaca element z listy bez usuwania przedmiotu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na wskaznik poczatku listy zakupow \\
+\hline
+{\em id} & identyfikator przedmiotu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na przedmiot z usunietego elementu 
+\end{DoxyReturn}
+\mbox{\label{shopping__list_8h_a5c3de3c2cbaef071b2fa82a69943074a}} 
+\index{shopping\_list.h@{shopping\_list.h}!getShoppingListFromFile@{getShoppingListFromFile}}
+\index{getShoppingListFromFile@{getShoppingListFromFile}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{getShoppingListFromFile()}
+{\footnotesize\ttfamily \textbf{ shopping\+\_\+list\+\_\+item}$\ast$ get\+Shopping\+List\+From\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Funkcja wczytujaca do programu liste zakupow z pliku 
+\begin{DoxyParams}{Parametry}
+{\em filename} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na pierwszy element listy 
+\end{DoxyReturn}
+\mbox{\label{shopping__list_8h_a893723fbfbb4fcd55146a6395a9ddad3}} 
+\index{shopping\_list.h@{shopping\_list.h}!handleCreateShoppingItem@{handleCreateShoppingItem}}
+\index{handleCreateShoppingItem@{handleCreateShoppingItem}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{handleCreateShoppingItem()}
+{\footnotesize\ttfamily \textbf{ shopping\+\_\+list\+\_\+item}$\ast$ handle\+Create\+Shopping\+Item (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca dodawanie przedmiotu do listy 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na pierwszy element listy zakupow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na nowy poczatek listy zakupow 
+\end{DoxyReturn}
+\mbox{\label{shopping__list_8h_a2f761bb4a98cd8f7933645513240acb0}} 
+\index{shopping\_list.h@{shopping\_list.h}!handleMarkAsBought@{handleMarkAsBought}}
+\index{handleMarkAsBought@{handleMarkAsBought}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{handleMarkAsBought()}
+{\footnotesize\ttfamily void handle\+Mark\+As\+Bought (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+Shopping\+List,  }\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+History\+List }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca oznaczanie przedmiotu jako zakupiony \mbox{\label{shopping__list_8h_a7fd2d3a270ad3c756a4c24dba91912f4}} 
+\index{shopping\_list.h@{shopping\_list.h}!handleRemoveFromShoppingList@{handleRemoveFromShoppingList}}
+\index{handleRemoveFromShoppingList@{handleRemoveFromShoppingList}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{handleRemoveFromShoppingList()}
+{\footnotesize\ttfamily \textbf{ shopping\+\_\+list\+\_\+item}$\ast$ handle\+Remove\+From\+Shopping\+List (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca usuwanie przedmiotu z listy zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na pierwszy element listy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na nowy poczatek listy zakupow 
+\end{DoxyReturn}
+\mbox{\label{shopping__list_8h_a4b9059869faf0788c506bbefe3dc15bc}} 
+\index{shopping\_list.h@{shopping\_list.h}!removeFromShoppingList@{removeFromShoppingList}}
+\index{removeFromShoppingList@{removeFromShoppingList}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{removeFromShoppingList()}
+{\footnotesize\ttfamily \textbf{ shopping\+\_\+list\+\_\+item}$\ast$ remove\+From\+Shopping\+List (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Funkcja usuwajaca element z listy zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy zakupow \\
+\hline
+{\em id} & identyfikator elementu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na nowy poczatek listy zakupow 
+\end{DoxyReturn}
+\mbox{\label{shopping__list_8h_a0705c968fbb878d94ba070f2da3819e2}} 
+\index{shopping\_list.h@{shopping\_list.h}!saveShoppingListIntoFile@{saveShoppingListIntoFile}}
+\index{saveShoppingListIntoFile@{saveShoppingListIntoFile}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{saveShoppingListIntoFile()}
+{\footnotesize\ttfamily void save\+Shopping\+List\+Into\+File (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Funkcja zapisujaca do pliku liste zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na pierwszy element listy zakupow \\
+\hline
+{\em filename} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\label{shopping__list_8h_adc8d43edf7280e918dec8f71e228b8c1}} 
+\index{shopping\_list.h@{shopping\_list.h}!shoppingListHandler@{shoppingListHandler}}
+\index{shoppingListHandler@{shoppingListHandler}!shopping\_list.h@{shopping\_list.h}}
+\doxysubsubsection{shoppingListHandler()}
+{\footnotesize\ttfamily void shopping\+List\+Handler (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+Head,  }\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+History\+List }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca modul listy zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na wskaznik pierwszego elementu listy zakupow \\
+\hline
+{\em p\+History\+List} & wskaznik na wskaznik pierwszego elementu historii \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,356 @@
+\begin{theindex}
+
+  \item {addShopingItemToList}
+    \subitem {shopping\_list.c}, 33
+    \subitem {shopping\_list.h}, 37
+  \item {addToHistoryList}
+    \subitem {history\_list.c}, 13
+    \subitem {history\_list.h}, 18
+
+  \indexspace
+
+  \item {buy\_date}, 5
+    \subitem {day}, 5
+    \subitem {month}, 5
+    \subitem {year}, 6
+
+  \indexspace
+
+  \item {clearBuffer}
+    \subitem {interface.c}, 23
+    \subitem {interface.h}, 28
+
+  \indexspace
+
+  \item {day}
+    \subitem {buy\_date}, 5
+  \item {deleteHistoryList}
+    \subitem {history\_list.c}, 13
+    \subitem {history\_list.h}, 19
+  \item {deleteShoppingList}
+    \subitem {shopping\_list.c}, 34
+    \subitem {shopping\_list.h}, 37
+  \item {detachItemFromShoppingList}
+    \subitem {shopping\_list.c}, 34
+    \subitem {shopping\_list.h}, 39
+
+  \indexspace
+
+  \item {enums.h}, 11
+    \subitem {menuOptions}, 11
+    \subitem {none}, 11
+    \subitem {shopingHistory}, 11
+    \subitem {shoppingList}, 11
+    \subitem {termination}, 11
+
+  \indexspace
+
+  \item {getHistoryListFromFile}
+    \subitem {history\_list.c}, 15
+    \subitem {history\_list.h}, 19
+  \item {getShoppingListFromFile}
+    \subitem {shopping\_list.c}, 34
+    \subitem {shopping\_list.h}, 39
+
+  \indexspace
+
+  \item {handleCreateShoppingItem}
+    \subitem {shopping\_list.c}, 35
+    \subitem {shopping\_list.h}, 39
+  \item {handleMainMenu}
+    \subitem {interface.c}, 23
+    \subitem {interface.h}, 28
+  \item {handleMarkAsBought}
+    \subitem {shopping\_list.c}, 35
+    \subitem {shopping\_list.h}, 40
+  \item {handleRemoveFromHistoryList}
+    \subitem {history\_list.c}, 15
+    \subitem {history\_list.h}, 19
+  \item {handleRemoveFromShoppingList}
+    \subitem {shopping\_list.c}, 35
+    \subitem {shopping\_list.h}, 40
+  \item {handleSumExpensesInMonth}
+    \subitem {history\_list.c}, 15
+    \subitem {history\_list.h}, 20
+  \item {helpers.c}, 11
+    \subitem {trimLine}, 12
+  \item {helpers.h}, 12
+    \subitem {trimLine}, 12
+  \item {history\_list.c}, 12
+    \subitem {addToHistoryList}, 13
+    \subitem {deleteHistoryList}, 13
+    \subitem {getHistoryListFromFile}, 15
+    \subitem {handleRemoveFromHistoryList}, 15
+    \subitem {handleSumExpensesInMonth}, 15
+    \subitem {historyListHandler}, 16
+    \subitem {removeFromHistoryList}, 16
+    \subitem {saveHistoryListIntoFile}, 16
+    \subitem {splitStringToDate}, 17
+    \subitem {splitStringToYearAndMonth}, 17
+    \subitem {sumExpensesInMonth}, 17
+  \item {history\_list.h}, 18
+    \subitem {addToHistoryList}, 18
+    \subitem {deleteHistoryList}, 19
+    \subitem {getHistoryListFromFile}, 19
+    \subitem {handleRemoveFromHistoryList}, 19
+    \subitem {handleSumExpensesInMonth}, 20
+    \subitem {historyListHandler}, 20
+    \subitem {removeFromHistoryList}, 20
+    \subitem {saveHistoryListIntoFile}, 21
+    \subitem {splitStringToDate}, 21
+    \subitem {splitStringToYearAndMonth}, 21
+    \subitem {sumExpensesInMonth}, 22
+  \item {history\_list\_item}, 6
+    \subitem {pDate}, 6
+    \subitem {pItem}, 7
+    \subitem {pNext}, 7
+    \subitem {price}, 7
+    \subitem {structs.h}, 42
+  \item {historyListHandler}
+    \subitem {history\_list.c}, 16
+    \subitem {history\_list.h}, 20
+
+  \indexspace
+
+  \item {id}
+    \subitem {shop\_item}, 8
+  \item {interface.c}, 22
+    \subitem {clearBuffer}, 23
+    \subitem {handleMainMenu}, 23
+    \subitem {renderAddShoppingItemHeader}, 23
+    \subitem {renderBuyItemHeader}, 23
+    \subitem {renderCostPrompt}, 23
+    \subitem {renderDate}, 24
+    \subitem {renderDatePrompt}, 24
+    \subitem {renderEmptyHistoryTable}, 24
+    \subitem {renderEmptyShoppingTable}, 24
+    \subitem {renderErrorNotFound}, 24
+    \subitem {renderHistoryItem}, 24
+    \subitem {renderHistoryList}, 25
+    \subitem {renderHistoryListOptions}, 25
+    \subitem {renderHistoryTableEnd}, 25
+    \subitem {renderHistoryTableHeader}, 25
+    \subitem {renderMenu}, 25
+    \subitem {renderPrompt}, 25
+    \subitem {renderRemoveHistoryItemHeader}, 26
+    \subitem {renderRemoveShoppingItemHeader}, 26
+    \subitem {renderShopItem}, 26
+    \subitem {renderShoppingList}, 26
+    \subitem {renderShoppingListOptions}, 26
+    \subitem {renderShoppingTableEnd}, 27
+    \subitem {renderShoppingTableHeader}, 27
+    \subitem {renderSumOfExpenese}, 27
+    \subitem {renderYearAndMonthPrompt}, 27
+  \item {interface.h}, 27
+    \subitem {clearBuffer}, 28
+    \subitem {handleMainMenu}, 28
+    \subitem {renderAddShoppingItemHeader}, 28
+    \subitem {renderBuyItemHeader}, 28
+    \subitem {renderCostPrompt}, 29
+    \subitem {renderDate}, 29
+    \subitem {renderDatePrompt}, 29
+    \subitem {renderEmptyHistoryTable}, 29
+    \subitem {renderEmptyShoppingTable}, 29
+    \subitem {renderErrorNotFound}, 29
+    \subitem {renderHistoryItem}, 29
+    \subitem {renderHistoryList}, 30
+    \subitem {renderHistoryListOptions}, 30
+    \subitem {renderHistoryTableEnd}, 30
+    \subitem {renderHistoryTableHeader}, 30
+    \subitem {renderMenu}, 30
+    \subitem {renderPrompt}, 30
+    \subitem {renderRemoveHistoryItemHeader}, 31
+    \subitem {renderRemoveShoppingItemHeader}, 31
+    \subitem {renderShopItem}, 31
+    \subitem {renderShoppingList}, 31
+    \subitem {renderShoppingListOptions}, 31
+    \subitem {renderShoppingTableEnd}, 32
+    \subitem {renderShoppingTableHeader}, 32
+    \subitem {renderSumOfExpenese}, 32
+    \subitem {renderYearAndMonthPrompt}, 32
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, 33
+  \item {main.c}, 32
+    \subitem {main}, 33
+  \item {menuOptions}
+    \subitem {enums.h}, 11
+  \item {mockup\_historia.txt}, 33
+  \item {mockup\_lista.txt}, 33
+  \item {month}
+    \subitem {buy\_date}, 5
+
+  \indexspace
+
+  \item {name}
+    \subitem {shop\_item}, 8
+  \item {none}
+    \subitem {enums.h}, 11
+
+  \indexspace
+
+  \item {pDate}
+    \subitem {history\_list\_item}, 6
+  \item {pItem}
+    \subitem {history\_list\_item}, 7
+    \subitem {shopping\_list\_item}, 8
+  \item {pNext}
+    \subitem {history\_list\_item}, 7
+    \subitem {shopping\_list\_item}, 9
+  \item {price}
+    \subitem {history\_list\_item}, 7
+
+  \indexspace
+
+  \item {removeFromHistoryList}
+    \subitem {history\_list.c}, 16
+    \subitem {history\_list.h}, 20
+  \item {removeFromShoppingList}
+    \subitem {shopping\_list.c}, 36
+    \subitem {shopping\_list.h}, 40
+  \item {renderAddShoppingItemHeader}
+    \subitem {interface.c}, 23
+    \subitem {interface.h}, 28
+  \item {renderBuyItemHeader}
+    \subitem {interface.c}, 23
+    \subitem {interface.h}, 28
+  \item {renderCostPrompt}
+    \subitem {interface.c}, 23
+    \subitem {interface.h}, 29
+  \item {renderDate}
+    \subitem {interface.c}, 24
+    \subitem {interface.h}, 29
+  \item {renderDatePrompt}
+    \subitem {interface.c}, 24
+    \subitem {interface.h}, 29
+  \item {renderEmptyHistoryTable}
+    \subitem {interface.c}, 24
+    \subitem {interface.h}, 29
+  \item {renderEmptyShoppingTable}
+    \subitem {interface.c}, 24
+    \subitem {interface.h}, 29
+  \item {renderErrorNotFound}
+    \subitem {interface.c}, 24
+    \subitem {interface.h}, 29
+  \item {renderHistoryItem}
+    \subitem {interface.c}, 24
+    \subitem {interface.h}, 29
+  \item {renderHistoryList}
+    \subitem {interface.c}, 25
+    \subitem {interface.h}, 30
+  \item {renderHistoryListOptions}
+    \subitem {interface.c}, 25
+    \subitem {interface.h}, 30
+  \item {renderHistoryTableEnd}
+    \subitem {interface.c}, 25
+    \subitem {interface.h}, 30
+  \item {renderHistoryTableHeader}
+    \subitem {interface.c}, 25
+    \subitem {interface.h}, 30
+  \item {renderMenu}
+    \subitem {interface.c}, 25
+    \subitem {interface.h}, 30
+  \item {renderPrompt}
+    \subitem {interface.c}, 25
+    \subitem {interface.h}, 30
+  \item {renderRemoveHistoryItemHeader}
+    \subitem {interface.c}, 26
+    \subitem {interface.h}, 31
+  \item {renderRemoveShoppingItemHeader}
+    \subitem {interface.c}, 26
+    \subitem {interface.h}, 31
+  \item {renderShopItem}
+    \subitem {interface.c}, 26
+    \subitem {interface.h}, 31
+  \item {renderShoppingList}
+    \subitem {interface.c}, 26
+    \subitem {interface.h}, 31
+  \item {renderShoppingListOptions}
+    \subitem {interface.c}, 26
+    \subitem {interface.h}, 31
+  \item {renderShoppingTableEnd}
+    \subitem {interface.c}, 27
+    \subitem {interface.h}, 32
+  \item {renderShoppingTableHeader}
+    \subitem {interface.c}, 27
+    \subitem {interface.h}, 32
+  \item {renderSumOfExpenese}
+    \subitem {interface.c}, 27
+    \subitem {interface.h}, 32
+  \item {renderYearAndMonthPrompt}
+    \subitem {interface.c}, 27
+    \subitem {interface.h}, 32
+
+  \indexspace
+
+  \item {saveHistoryListIntoFile}
+    \subitem {history\_list.c}, 16
+    \subitem {history\_list.h}, 21
+  \item {saveShoppingListIntoFile}
+    \subitem {shopping\_list.c}, 36
+    \subitem {shopping\_list.h}, 41
+  \item {shop\_item}, 7
+    \subitem {id}, 8
+    \subitem {name}, 8
+  \item {shopingHistory}
+    \subitem {enums.h}, 11
+  \item {shopping\_list.c}, 33
+    \subitem {addShopingItemToList}, 33
+    \subitem {deleteShoppingList}, 34
+    \subitem {detachItemFromShoppingList}, 34
+    \subitem {getShoppingListFromFile}, 34
+    \subitem {handleCreateShoppingItem}, 35
+    \subitem {handleMarkAsBought}, 35
+    \subitem {handleRemoveFromShoppingList}, 35
+    \subitem {removeFromShoppingList}, 36
+    \subitem {saveShoppingListIntoFile}, 36
+    \subitem {shoppingListHandler}, 36
+  \item {shopping\_list.h}, 37
+    \subitem {addShopingItemToList}, 37
+    \subitem {deleteShoppingList}, 37
+    \subitem {detachItemFromShoppingList}, 39
+    \subitem {getShoppingListFromFile}, 39
+    \subitem {handleCreateShoppingItem}, 39
+    \subitem {handleMarkAsBought}, 40
+    \subitem {handleRemoveFromShoppingList}, 40
+    \subitem {removeFromShoppingList}, 40
+    \subitem {saveShoppingListIntoFile}, 41
+    \subitem {shoppingListHandler}, 41
+  \item {shopping\_list\_item}, 8
+    \subitem {pItem}, 8
+    \subitem {pNext}, 9
+    \subitem {structs.h}, 42
+  \item {shoppingList}
+    \subitem {enums.h}, 11
+  \item {shoppingListHandler}
+    \subitem {shopping\_list.c}, 36
+    \subitem {shopping\_list.h}, 41
+  \item {splitStringToDate}
+    \subitem {history\_list.c}, 17
+    \subitem {history\_list.h}, 21
+  \item {splitStringToYearAndMonth}
+    \subitem {history\_list.c}, 17
+    \subitem {history\_list.h}, 21
+  \item {structs.h}, 41
+    \subitem {history\_list\_item}, 42
+    \subitem {shopping\_list\_item}, 42
+  \item {sumExpensesInMonth}
+    \subitem {history\_list.c}, 17
+    \subitem {history\_list.h}, 22
+
+  \indexspace
+
+  \item {termination}
+    \subitem {enums.h}, 11
+  \item {trimLine}
+    \subitem {helpers.c}, 12
+    \subitem {helpers.h}, 12
+
+  \indexspace
+
+  \item {year}
+    \subitem {buy\_date}, 6
+
+\end{theindex}

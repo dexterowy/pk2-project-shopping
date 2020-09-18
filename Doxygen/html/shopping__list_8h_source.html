@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zakupy: Plik źródłowy shopping_list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zakupy
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">shopping_list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="shopping__list_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SHOPPING_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SHOPPING_LIST</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shopping__list_8h.html#adc8d43edf7280e918dec8f71e228b8c1">shoppingListHandler</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> **pHead, <a class="code" href="structhistory__list__item.html">history_list_item</a> **pHistoryList);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="structshopping__list__item.html">shopping_list_item</a> * <a class="code" href="shopping__list_8h.html#a5c3de3c2cbaef071b2fa82a69943074a">getShoppingListFromFile</a>(<span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shopping__list_8h.html#a0705c968fbb878d94ba070f2da3819e2">saveShoppingListIntoFile</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *pHead, <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *<a class="code" href="shopping__list_8h.html#abba3bea600b850eb4a97b2fe4abbf552">addShopingItemToList</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *pHead, <a class="code" href="structshop__item.html">shop_item</a> *pItem);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *<a class="code" href="shopping__list_8h.html#a893723fbfbb4fcd55146a6395a9ddad3">handleCreateShoppingItem</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *pHead);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *<a class="code" href="shopping__list_8h.html#a4b9059869faf0788c506bbefe3dc15bc">removeFromShoppingList</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *pHead, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *<a class="code" href="shopping__list_8h.html#a7fd2d3a270ad3c756a4c24dba91912f4">handleRemoveFromShoppingList</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *pHead);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structshop__item.html">shop_item</a> *<a class="code" href="shopping__list_8h.html#a5554a1593a126a8f71aed15fa68c9893">detachItemFromShoppingList</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> **pHead, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shopping__list_8h.html#a2f761bb4a98cd8f7933645513240acb0">handleMarkAsBought</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> **pShoppingList, <a class="code" href="structhistory__list__item.html">history_list_item</a> **pHistoryList);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="shopping__list_8h.html#aa6b1c2b29133d14545a39b31ad0a1af6">deleteShoppingList</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> **pHead);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ashopping__list_8h_html_a2f761bb4a98cd8f7933645513240acb0"><div class="ttname"><a href="shopping__list_8h.html#a2f761bb4a98cd8f7933645513240acb0">handleMarkAsBought</a></div><div class="ttdeci">void handleMarkAsBought(shopping_list_item **pShoppingList, history_list_item **pHistoryList)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:181</div></div>
+<div class="ttc" id="ashopping__list_8h_html_adc8d43edf7280e918dec8f71e228b8c1"><div class="ttname"><a href="shopping__list_8h.html#adc8d43edf7280e918dec8f71e228b8c1">shoppingListHandler</a></div><div class="ttdeci">void shoppingListHandler(shopping_list_item **pHead, history_list_item **pHistoryList)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:204</div></div>
+<div class="ttc" id="ashopping__list_8h_html_a5c3de3c2cbaef071b2fa82a69943074a"><div class="ttname"><a href="shopping__list_8h.html#a5c3de3c2cbaef071b2fa82a69943074a">getShoppingListFromFile</a></div><div class="ttdeci">shopping_list_item * getShoppingListFromFile(char *filename)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:9</div></div>
+<div class="ttc" id="ashopping__list_8h_html_a5554a1593a126a8f71aed15fa68c9893"><div class="ttname"><a href="shopping__list_8h.html#a5554a1593a126a8f71aed15fa68c9893">detachItemFromShoppingList</a></div><div class="ttdeci">shop_item * detachItemFromShoppingList(shopping_list_item **pHead, int id)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:118</div></div>
+<div class="ttc" id="ashopping__list_8h_html_abba3bea600b850eb4a97b2fe4abbf552"><div class="ttname"><a href="shopping__list_8h.html#abba3bea600b850eb4a97b2fe4abbf552">addShopingItemToList</a></div><div class="ttdeci">shopping_list_item * addShopingItemToList(shopping_list_item *pHead, shop_item *pItem)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:83</div></div>
+<div class="ttc" id="ashopping__list_8h_html_a7fd2d3a270ad3c756a4c24dba91912f4"><div class="ttname"><a href="shopping__list_8h.html#a7fd2d3a270ad3c756a4c24dba91912f4">handleRemoveFromShoppingList</a></div><div class="ttdeci">shopping_list_item * handleRemoveFromShoppingList(shopping_list_item *pHead)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:172</div></div>
+<div class="ttc" id="ashopping__list_8h_html_a4b9059869faf0788c506bbefe3dc15bc"><div class="ttname"><a href="shopping__list_8h.html#a4b9059869faf0788c506bbefe3dc15bc">removeFromShoppingList</a></div><div class="ttdeci">shopping_list_item * removeFromShoppingList(shopping_list_item *pHead, int id)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:90</div></div>
+<div class="ttc" id="astructhistory__list__item_html"><div class="ttname"><a href="structhistory__list__item.html">history_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:32</div></div>
+<div class="ttc" id="ashopping__list_8h_html_aa6b1c2b29133d14545a39b31ad0a1af6"><div class="ttname"><a href="shopping__list_8h.html#aa6b1c2b29133d14545a39b31ad0a1af6">deleteShoppingList</a></div><div class="ttdeci">void deleteShoppingList(shopping_list_item **pHead)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:69</div></div>
+<div class="ttc" id="astructshop__item_html"><div class="ttname"><a href="structshop__item.html">shop_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:7</div></div>
+<div class="ttc" id="ashopping__list_8h_html_a0705c968fbb878d94ba070f2da3819e2"><div class="ttname"><a href="shopping__list_8h.html#a0705c968fbb878d94ba070f2da3819e2">saveShoppingListIntoFile</a></div><div class="ttdeci">void saveShoppingListIntoFile(shopping_list_item *pHead, char *filename)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:46</div></div>
+<div class="ttc" id="astructshopping__list__item_html"><div class="ttname"><a href="structshopping__list__item.html">shopping_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:15</div></div>
+<div class="ttc" id="ashopping__list_8h_html_a893723fbfbb4fcd55146a6395a9ddad3"><div class="ttname"><a href="shopping__list_8h.html#a893723fbfbb4fcd55146a6395a9ddad3">handleCreateShoppingItem</a></div><div class="ttdeci">shopping_list_item * handleCreateShoppingItem(shopping_list_item *pHead)</div><div class="ttdef"><b>Definition:</b> shopping_list.c:149</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

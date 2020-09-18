@@ -1,0 +1,251 @@
+\doxysection{Dokumentacja pliku interface.\+c}
+\label{interface_8c}\index{interface.c@{interface.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}enums.\+h\char`\"{}}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ clear\+Buffer} ()
+\item 
+void \textbf{ render\+Prompt} ()
+\item 
+void \textbf{ render\+Date} (\textbf{ buy\+\_\+date} $\ast$p\+Date)
+\item 
+void \textbf{ render\+Error\+Not\+Found} ()
+\item 
+void \textbf{ render\+Menu} ()
+\item 
+\textbf{ menu\+Options} \textbf{ handle\+Main\+Menu} ()
+\item 
+void \textbf{ render\+Shopping\+Table\+Header} ()
+\item 
+void \textbf{ render\+Shopping\+Table\+End} ()
+\item 
+void \textbf{ render\+Shop\+Item} (\textbf{ shop\+\_\+item} $\ast$item)
+\item 
+void \textbf{ render\+Empty\+Shopping\+Table} ()
+\item 
+void \textbf{ render\+Shopping\+List\+Options} ()
+\item 
+void \textbf{ render\+Shopping\+List} (\textbf{ shopping\+\_\+list\+\_\+item} $\ast$p\+Head)
+\item 
+void \textbf{ render\+Add\+Shopping\+Item\+Header} ()
+\item 
+void \textbf{ render\+Remove\+Shopping\+Item\+Header} ()
+\item 
+void \textbf{ render\+History\+Table\+Header} ()
+\item 
+void \textbf{ render\+History\+Item} (\textbf{ history\+\_\+list\+\_\+item} $\ast$item)
+\item 
+void \textbf{ render\+History\+Table\+End} ()
+\item 
+void \textbf{ render\+History\+List\+Options} ()
+\item 
+void \textbf{ render\+Empty\+History\+Table} ()
+\item 
+void \textbf{ render\+History\+List} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head)
+\item 
+void \textbf{ render\+Remove\+History\+Item\+Header} ()
+\item 
+void \textbf{ render\+Year\+And\+Month\+Prompt} ()
+\item 
+void \textbf{ render\+Sum\+Of\+Expenese} (float sum)
+\item 
+void \textbf{ render\+Buy\+Item\+Header} ()
+\item 
+void \textbf{ render\+Cost\+Prompt} ()
+\item 
+void \textbf{ render\+Date\+Prompt} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\label{interface_8c_a20bbd4d45e3f01305dd709f5a9cc9952}} 
+\index{interface.c@{interface.c}!clearBuffer@{clearBuffer}}
+\index{clearBuffer@{clearBuffer}!interface.c@{interface.c}}
+\doxysubsubsection{clearBuffer()}
+{\footnotesize\ttfamily void clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja czyszczaca bufor \mbox{\label{interface_8c_a0bf463702494b765e50d1348692614e8}} 
+\index{interface.c@{interface.c}!handleMainMenu@{handleMainMenu}}
+\index{handleMainMenu@{handleMainMenu}!interface.c@{interface.c}}
+\doxysubsubsection{handleMainMenu()}
+{\footnotesize\ttfamily \textbf{ menu\+Options} handle\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca menu glowne \begin{DoxyReturn}{Zwraca}
+Zwraca enum bedacy wybrana opcja 
+\end{DoxyReturn}
+\mbox{\label{interface_8c_ae3fe6985388a64bf6275863fe326fdcd}} 
+\index{interface.c@{interface.c}!renderAddShoppingItemHeader@{renderAddShoppingItemHeader}}
+\index{renderAddShoppingItemHeader@{renderAddShoppingItemHeader}!interface.c@{interface.c}}
+\doxysubsubsection{renderAddShoppingItemHeader()}
+{\footnotesize\ttfamily void render\+Add\+Shopping\+Item\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca naglowek podczas dodawania przedmiotu do listy \mbox{\label{interface_8c_accd89f4cf4f23659d72424e5ba770e75}} 
+\index{interface.c@{interface.c}!renderBuyItemHeader@{renderBuyItemHeader}}
+\index{renderBuyItemHeader@{renderBuyItemHeader}!interface.c@{interface.c}}
+\doxysubsubsection{renderBuyItemHeader()}
+{\footnotesize\ttfamily void render\+Buy\+Item\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca naglowek podczas oznaczania przedmiotu jako kupiony \mbox{\label{interface_8c_aa319ab9f71bf5030ac7e721270a213c8}} 
+\index{interface.c@{interface.c}!renderCostPrompt@{renderCostPrompt}}
+\index{renderCostPrompt@{renderCostPrompt}!interface.c@{interface.c}}
+\doxysubsubsection{renderCostPrompt()}
+{\footnotesize\ttfamily void render\+Cost\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca zapytanie o koszt kupowanego przedmiotu \mbox{\label{interface_8c_a296306d02cb83f4cd338bee3039d98e5}} 
+\index{interface.c@{interface.c}!renderDate@{renderDate}}
+\index{renderDate@{renderDate}!interface.c@{interface.c}}
+\doxysubsubsection{renderDate()}
+{\footnotesize\ttfamily void render\+Date (\begin{DoxyParamCaption}\item[{\textbf{ buy\+\_\+date} $\ast$}]{p\+Date }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca date w formacie (Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD) \mbox{\label{interface_8c_ae46bff6296efa83095f141dba6a5a8cf}} 
+\index{interface.c@{interface.c}!renderDatePrompt@{renderDatePrompt}}
+\index{renderDatePrompt@{renderDatePrompt}!interface.c@{interface.c}}
+\doxysubsubsection{renderDatePrompt()}
+{\footnotesize\ttfamily void render\+Date\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca zapytanie o date kupna przedmiotu \mbox{\label{interface_8c_a5b3ce2520a9d3c9f0467f0948fe835c7}} 
+\index{interface.c@{interface.c}!renderEmptyHistoryTable@{renderEmptyHistoryTable}}
+\index{renderEmptyHistoryTable@{renderEmptyHistoryTable}!interface.c@{interface.c}}
+\doxysubsubsection{renderEmptyHistoryTable()}
+{\footnotesize\ttfamily void render\+Empty\+History\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca placeholder w przypadku pustej historii \mbox{\label{interface_8c_af0449e933bf4cf361da724f120276057}} 
+\index{interface.c@{interface.c}!renderEmptyShoppingTable@{renderEmptyShoppingTable}}
+\index{renderEmptyShoppingTable@{renderEmptyShoppingTable}!interface.c@{interface.c}}
+\doxysubsubsection{renderEmptyShoppingTable()}
+{\footnotesize\ttfamily void render\+Empty\+Shopping\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca placeholder w przypadku pustej tabeli \mbox{\label{interface_8c_abd702390376d527d14c689dc2b21ff9d}} 
+\index{interface.c@{interface.c}!renderErrorNotFound@{renderErrorNotFound}}
+\index{renderErrorNotFound@{renderErrorNotFound}!interface.c@{interface.c}}
+\doxysubsubsection{renderErrorNotFound()}
+{\footnotesize\ttfamily void render\+Error\+Not\+Found (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca na ekran blad dotyczacy nie znalezienia obiektu \mbox{\label{interface_8c_adb273e537ef6873f48ad16a891dbab5c}} 
+\index{interface.c@{interface.c}!renderHistoryItem@{renderHistoryItem}}
+\index{renderHistoryItem@{renderHistoryItem}!interface.c@{interface.c}}
+\doxysubsubsection{renderHistoryItem()}
+{\footnotesize\ttfamily void render\+History\+Item (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{item }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca na ekran wpis z historii zakupow 
+\begin{DoxyParams}{Parametry}
+{\em item} & Wskaznik na wpis z historii \\
+\hline
+\end{DoxyParams}
+\mbox{\label{interface_8c_ab7ca542d37d665aa448d9a8c73f24789}} 
+\index{interface.c@{interface.c}!renderHistoryList@{renderHistoryList}}
+\index{renderHistoryList@{renderHistoryList}!interface.c@{interface.c}}
+\doxysubsubsection{renderHistoryList()}
+{\footnotesize\ttfamily void render\+History\+List (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca historie 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & Wskaznik na poczatek listy \\
+\hline
+\end{DoxyParams}
+\mbox{\label{interface_8c_a5dfa3038e194719f8f65e5090a02fc0d}} 
+\index{interface.c@{interface.c}!renderHistoryListOptions@{renderHistoryListOptions}}
+\index{renderHistoryListOptions@{renderHistoryListOptions}!interface.c@{interface.c}}
+\doxysubsubsection{renderHistoryListOptions()}
+{\footnotesize\ttfamily void render\+History\+List\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca liste opcji \mbox{\label{interface_8c_a3fe2486f418e128defabdfae9a38147a}} 
+\index{interface.c@{interface.c}!renderHistoryTableEnd@{renderHistoryTableEnd}}
+\index{renderHistoryTableEnd@{renderHistoryTableEnd}!interface.c@{interface.c}}
+\doxysubsubsection{renderHistoryTableEnd()}
+{\footnotesize\ttfamily void render\+History\+Table\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca znaki konca tabeli \mbox{\label{interface_8c_a97ae2670d374a882a73e0e4814678a92}} 
+\index{interface.c@{interface.c}!renderHistoryTableHeader@{renderHistoryTableHeader}}
+\index{renderHistoryTableHeader@{renderHistoryTableHeader}!interface.c@{interface.c}}
+\doxysubsubsection{renderHistoryTableHeader()}
+{\footnotesize\ttfamily void render\+History\+Table\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca naglowek tabeli \mbox{\label{interface_8c_a78e361735746351cb5af84496b98373f}} 
+\index{interface.c@{interface.c}!renderMenu@{renderMenu}}
+\index{renderMenu@{renderMenu}!interface.c@{interface.c}}
+\doxysubsubsection{renderMenu()}
+{\footnotesize\ttfamily void render\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca menu glowne \mbox{\label{interface_8c_a9d5e0af33487a0409c8b6e476a350a12}} 
+\index{interface.c@{interface.c}!renderPrompt@{renderPrompt}}
+\index{renderPrompt@{renderPrompt}!interface.c@{interface.c}}
+\doxysubsubsection{renderPrompt()}
+{\footnotesize\ttfamily void render\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca na ekran znak zachety \mbox{\label{interface_8c_a6717481e048e628d7e7ae928f75e8d79}} 
+\index{interface.c@{interface.c}!renderRemoveHistoryItemHeader@{renderRemoveHistoryItemHeader}}
+\index{renderRemoveHistoryItemHeader@{renderRemoveHistoryItemHeader}!interface.c@{interface.c}}
+\doxysubsubsection{renderRemoveHistoryItemHeader()}
+{\footnotesize\ttfamily void render\+Remove\+History\+Item\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswitlajaca naglowek podczas usuwania przedmiotu z listy \mbox{\label{interface_8c_adcbd2e81ec49276dbac8a78c892b2bf8}} 
+\index{interface.c@{interface.c}!renderRemoveShoppingItemHeader@{renderRemoveShoppingItemHeader}}
+\index{renderRemoveShoppingItemHeader@{renderRemoveShoppingItemHeader}!interface.c@{interface.c}}
+\doxysubsubsection{renderRemoveShoppingItemHeader()}
+{\footnotesize\ttfamily void render\+Remove\+Shopping\+Item\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswitlajaca naglowek podczas usuwania przedmiotu z listy \mbox{\label{interface_8c_aba87cce0f2ea84d9f27c251583e6534f}} 
+\index{interface.c@{interface.c}!renderShopItem@{renderShopItem}}
+\index{renderShopItem@{renderShopItem}!interface.c@{interface.c}}
+\doxysubsubsection{renderShopItem()}
+{\footnotesize\ttfamily void render\+Shop\+Item (\begin{DoxyParamCaption}\item[{\textbf{ shop\+\_\+item} $\ast$}]{item }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca obiekt z listy zakupow 
+\begin{DoxyParams}{Parametry}
+{\em item} & wskaznik na strukture przedmiotu \\
+\hline
+\end{DoxyParams}
+\mbox{\label{interface_8c_a2ced83c2375375e535e4eaea868186ec}} 
+\index{interface.c@{interface.c}!renderShoppingList@{renderShoppingList}}
+\index{renderShoppingList@{renderShoppingList}!interface.c@{interface.c}}
+\doxysubsubsection{renderShoppingList()}
+{\footnotesize\ttfamily void render\+Shopping\+List (\begin{DoxyParamCaption}\item[{\textbf{ shopping\+\_\+list\+\_\+item} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca wszystkie elementy listy zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy zakupow \\
+\hline
+\end{DoxyParams}
+\mbox{\label{interface_8c_a24eb676f06118675cdabece05dca5ea1}} 
+\index{interface.c@{interface.c}!renderShoppingListOptions@{renderShoppingListOptions}}
+\index{renderShoppingListOptions@{renderShoppingListOptions}!interface.c@{interface.c}}
+\doxysubsubsection{renderShoppingListOptions()}
+{\footnotesize\ttfamily void render\+Shopping\+List\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca liste opcji \mbox{\label{interface_8c_a2d3920d2ad5eb567ede5184ca38e0442}} 
+\index{interface.c@{interface.c}!renderShoppingTableEnd@{renderShoppingTableEnd}}
+\index{renderShoppingTableEnd@{renderShoppingTableEnd}!interface.c@{interface.c}}
+\doxysubsubsection{renderShoppingTableEnd()}
+{\footnotesize\ttfamily void render\+Shopping\+Table\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca znaki konca tabeli \mbox{\label{interface_8c_a40d87ad297ba26dc57b4bdce04fd61fa}} 
+\index{interface.c@{interface.c}!renderShoppingTableHeader@{renderShoppingTableHeader}}
+\index{renderShoppingTableHeader@{renderShoppingTableHeader}!interface.c@{interface.c}}
+\doxysubsubsection{renderShoppingTableHeader()}
+{\footnotesize\ttfamily void render\+Shopping\+Table\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca naglowek tabeli \mbox{\label{interface_8c_af1192564313010bcd7285456c782aff1}} 
+\index{interface.c@{interface.c}!renderSumOfExpenese@{renderSumOfExpenese}}
+\index{renderSumOfExpenese@{renderSumOfExpenese}!interface.c@{interface.c}}
+\doxysubsubsection{renderSumOfExpenese()}
+{\footnotesize\ttfamily void render\+Sum\+Of\+Expenese (\begin{DoxyParamCaption}\item[{float}]{sum }\end{DoxyParamCaption})}
+
+Funkcja wypisujaca sume wydatkow w danym miesiacu 
+\begin{DoxyParams}{Parametry}
+{\em sum} & Suma wydatkow \\
+\hline
+\end{DoxyParams}
+\mbox{\label{interface_8c_ac0a8fb1d4f1bae1214b72f683ae34734}} 
+\index{interface.c@{interface.c}!renderYearAndMonthPrompt@{renderYearAndMonthPrompt}}
+\index{renderYearAndMonthPrompt@{renderYearAndMonthPrompt}!interface.c@{interface.c}}
+\doxysubsubsection{renderYearAndMonthPrompt()}
+{\footnotesize\ttfamily void render\+Year\+And\+Month\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funkcja wyswietlajaca zapytanie o rok i miesiac 

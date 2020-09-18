@@ -1,0 +1,187 @@
+\doxysection{Dokumentacja pliku history\+\_\+list.\+h}
+\label{history__list_8h}\index{history\_list.h@{history\_list.h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ split\+String\+To\+Date} (\textbf{ buy\+\_\+date} $\ast$p\+Date, char $\ast$line)
+\item 
+void \textbf{ split\+String\+To\+Year\+And\+Month} (char $\ast$year, char $\ast$month, char $\ast$line)
+\item 
+\textbf{ history\+\_\+list\+\_\+item} $\ast$ \textbf{ get\+History\+List\+From\+File} (char $\ast$filename)
+\item 
+void \textbf{ save\+History\+List\+Into\+File} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head, char $\ast$filename)
+\item 
+void \textbf{ delete\+History\+List} (\textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$p\+Head)
+\item 
+\textbf{ history\+\_\+list\+\_\+item} $\ast$ \textbf{ remove\+From\+History\+List} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head, int id)
+\item 
+\textbf{ history\+\_\+list\+\_\+item} $\ast$ \textbf{ add\+To\+History\+List} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head, \textbf{ shop\+\_\+item} $\ast$p\+Item, float price, \textbf{ buy\+\_\+date} $\ast$p\+Date)
+\item 
+\textbf{ history\+\_\+list\+\_\+item} $\ast$ \textbf{ handle\+Remove\+From\+History\+List} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head)
+\item 
+void \textbf{ history\+List\+Handler} (\textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$p\+Head)
+\item 
+float \textbf{ sum\+Expenses\+In\+Month} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head, char $\ast$month, char $\ast$year)
+\item 
+void \textbf{ handle\+Sum\+Expenses\+In\+Month} (\textbf{ history\+\_\+list\+\_\+item} $\ast$p\+Head)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\label{history__list_8h_ac84255d4ae28869d1fb7f96250e36fcc}} 
+\index{history\_list.h@{history\_list.h}!addToHistoryList@{addToHistoryList}}
+\index{addToHistoryList@{addToHistoryList}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{addToHistoryList()}
+{\footnotesize\ttfamily \textbf{ history\+\_\+list\+\_\+item}$\ast$ add\+To\+History\+List (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{\textbf{ shop\+\_\+item} $\ast$}]{p\+Item,  }\item[{float}]{price,  }\item[{\textbf{ buy\+\_\+date} $\ast$}]{p\+Date }\end{DoxyParamCaption})}
+
+Funkcja dodajaca element na pocztek listy historii zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy historii zakupow \\
+\hline
+{\em p\+Item} & wskaznik na przedmiot ktory zostanie dodany \\
+\hline
+{\em price} & cena zakupu \\
+\hline
+{\em p\+Date} & wskaznik na strukture daty zakupu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na nowy poczatek listy historii zakupow 
+\end{DoxyReturn}
+\mbox{\label{history__list_8h_a82ebe0a5b4546306b6827477030f15e8}} 
+\index{history\_list.h@{history\_list.h}!deleteHistoryList@{deleteHistoryList}}
+\index{deleteHistoryList@{deleteHistoryList}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{deleteHistoryList()}
+{\footnotesize\ttfamily void delete\+History\+List (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja usuwajaca dynamicznie zaalokowana pamiec historii zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na wskaznik poczatku listy historii zakupow \\
+\hline
+\end{DoxyParams}
+\mbox{\label{history__list_8h_a5cc8c2060d1ba1c95bd060cc0b7993b8}} 
+\index{history\_list.h@{history\_list.h}!getHistoryListFromFile@{getHistoryListFromFile}}
+\index{getHistoryListFromFile@{getHistoryListFromFile}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{getHistoryListFromFile()}
+{\footnotesize\ttfamily \textbf{ history\+\_\+list\+\_\+item}$\ast$ get\+History\+List\+From\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Funkcja wczytujaca do programu historie zakupow z pliku 
+\begin{DoxyParams}{Parametry}
+{\em filename} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na poczatek listy histori zakupow 
+\end{DoxyReturn}
+\mbox{\label{history__list_8h_a86eed3c1becc5caf68604d287439f961}} 
+\index{history\_list.h@{history\_list.h}!handleRemoveFromHistoryList@{handleRemoveFromHistoryList}}
+\index{handleRemoveFromHistoryList@{handleRemoveFromHistoryList}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{handleRemoveFromHistoryList()}
+{\footnotesize\ttfamily \textbf{ history\+\_\+list\+\_\+item}$\ast$ handle\+Remove\+From\+History\+List (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca usuwanie elementow z listy historii zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskanznik na poczatek listy historii zakupow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na nowy poczatek listy historii zakupow 
+\end{DoxyReturn}
+\mbox{\label{history__list_8h_ab65b99c00e17f3abadc8ca9f9d170415}} 
+\index{history\_list.h@{history\_list.h}!handleSumExpensesInMonth@{handleSumExpensesInMonth}}
+\index{handleSumExpensesInMonth@{handleSumExpensesInMonth}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{handleSumExpensesInMonth()}
+{\footnotesize\ttfamily void handle\+Sum\+Expenses\+In\+Month (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja osblugujaca sumowanie wydatkow w miesiacu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy historii zakupow \\
+\hline
+\end{DoxyParams}
+\mbox{\label{history__list_8h_aec1a8e4e303e0285c8baeacae3041f8c}} 
+\index{history\_list.h@{history\_list.h}!historyListHandler@{historyListHandler}}
+\index{historyListHandler@{historyListHandler}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{historyListHandler()}
+{\footnotesize\ttfamily void history\+List\+Handler (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$$\ast$}]{p\+Head }\end{DoxyParamCaption})}
+
+Funkcja obslugujaca wyswietlenie listy historii zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na wskaznik poczateu listy historii zakupow \\
+\hline
+\end{DoxyParams}
+\mbox{\label{history__list_8h_ae05eb159cb302e29c49448555cb5b596}} 
+\index{history\_list.h@{history\_list.h}!removeFromHistoryList@{removeFromHistoryList}}
+\index{removeFromHistoryList@{removeFromHistoryList}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{removeFromHistoryList()}
+{\footnotesize\ttfamily \textbf{ history\+\_\+list\+\_\+item}$\ast$ remove\+From\+History\+List (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+Funkcja usuwajaca element z listy historii zakupow 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy zakupow \\
+\hline
+{\em id} & identyfiaktor zakupu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaznik na poczatek listy lub null jesli lista jest pusta 
+\end{DoxyReturn}
+\mbox{\label{history__list_8h_a331e2d811b83c8eddda8d79ff8257869}} 
+\index{history\_list.h@{history\_list.h}!saveHistoryListIntoFile@{saveHistoryListIntoFile}}
+\index{saveHistoryListIntoFile@{saveHistoryListIntoFile}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{saveHistoryListIntoFile()}
+{\footnotesize\ttfamily void save\+History\+List\+Into\+File (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Funkcja zapisujaca liste historii zakupow do pliku 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy historii zakupow \\
+\hline
+{\em filename} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\label{history__list_8h_a0c5bce7658f075e409b28105de4d9d2d}} 
+\index{history\_list.h@{history\_list.h}!splitStringToDate@{splitStringToDate}}
+\index{splitStringToDate@{splitStringToDate}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{splitStringToDate()}
+{\footnotesize\ttfamily void split\+String\+To\+Date (\begin{DoxyParamCaption}\item[{\textbf{ buy\+\_\+date} $\ast$}]{p\+Date,  }\item[{char $\ast$}]{line }\end{DoxyParamCaption})}
+
+Funkcja separujaca date w formacie Y\+Y\+Y\+Y-\/\+M\+M-\/\+DD na rok, miesiac i dzien 
+\begin{DoxyParams}{Parametry}
+{\em p\+Date} & wskaznik na strukture daty zakupu \\
+\hline
+{\em line} & wskaznik na poczatek napisu zawierajacego date \\
+\hline
+\end{DoxyParams}
+\mbox{\label{history__list_8h_a75c672940d50787a0899be6a8bcc495f}} 
+\index{history\_list.h@{history\_list.h}!splitStringToYearAndMonth@{splitStringToYearAndMonth}}
+\index{splitStringToYearAndMonth@{splitStringToYearAndMonth}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{splitStringToYearAndMonth()}
+{\footnotesize\ttfamily void split\+String\+To\+Year\+And\+Month (\begin{DoxyParamCaption}\item[{char $\ast$}]{year,  }\item[{char $\ast$}]{month,  }\item[{char $\ast$}]{line }\end{DoxyParamCaption})}
+
+Funkcja separujaca date w formacie Y\+Y\+Y\+Y-\/\+MM na rok i miesiac 
+\begin{DoxyParams}{Parametry}
+{\em year} & wskaznik na poczatek napisu do ktorego bedzie wpisany rok \\
+\hline
+{\em month} & wskaznik na poczatek napisu do ktorego bedzie wpisany miesiac \\
+\hline
+{\em line} & wskaznik na poczatek napisu zawierajacego date \\
+\hline
+\end{DoxyParams}
+\mbox{\label{history__list_8h_ae06b0e3fc0e4b23e0f318567d9b564c9}} 
+\index{history\_list.h@{history\_list.h}!sumExpensesInMonth@{sumExpensesInMonth}}
+\index{sumExpensesInMonth@{sumExpensesInMonth}!history\_list.h@{history\_list.h}}
+\doxysubsubsection{sumExpensesInMonth()}
+{\footnotesize\ttfamily float sum\+Expenses\+In\+Month (\begin{DoxyParamCaption}\item[{\textbf{ history\+\_\+list\+\_\+item} $\ast$}]{p\+Head,  }\item[{char $\ast$}]{month,  }\item[{char $\ast$}]{year }\end{DoxyParamCaption})}
+
+Funkcja sumujaca wydatki w danym miesiacu 
+\begin{DoxyParams}{Parametry}
+{\em p\+Head} & wskaznik na poczatek listy historii zakupow \\
+\hline
+{\em month} & wskaznik na napis zawierajacy miesiac \\
+\hline
+{\em year} & wskaznik na napis zawierajacy rok \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+suma wydatkow w podanym miesiacu 
+\end{DoxyReturn}

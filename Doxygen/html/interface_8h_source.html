@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zakupy: Plik źródłowy interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zakupy
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INTERFACE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INTERFACE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="enums_8h.html">enums.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="structs_8h.html">structs.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a20bbd4d45e3f01305dd709f5a9cc9952">clearBuffer</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a9d5e0af33487a0409c8b6e476a350a12">renderPrompt</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#abd702390376d527d14c689dc2b21ff9d">renderErrorNotFound</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a296306d02cb83f4cd338bee3039d98e5">renderDate</a>(<a class="code" href="structbuy__date.html">buy_date</a> *pDate);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a78e361735746351cb5af84496b98373f">renderMenu</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a40d87ad297ba26dc57b4bdce04fd61fa">renderShoppingTableHeader</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a2d3920d2ad5eb567ede5184ca38e0442">renderShoppingTableEnd</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#af0449e933bf4cf361da724f120276057">renderEmptyShoppingTable</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a24eb676f06118675cdabece05dca5ea1">renderShoppingListOptions</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#aba87cce0f2ea84d9f27c251583e6534f">renderShopItem</a>(<a class="code" href="structshop__item.html">shop_item</a>* item);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a2ced83c2375375e535e4eaea868186ec">renderShoppingList</a>(<a class="code" href="structshopping__list__item.html">shopping_list_item</a> *pHead);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="enums_8h.html#a149bab2b6af1b29ed2b958fceb68e2b1">menuOptions</a> <a class="code" href="interface_8h.html#a0bf463702494b765e50d1348692614e8">handleMainMenu</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ae3fe6985388a64bf6275863fe326fdcd">renderAddShoppingItemHeader</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#adcbd2e81ec49276dbac8a78c892b2bf8">renderRemoveShoppingItemHeader</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a97ae2670d374a882a73e0e4814678a92">renderHistoryTableHeader</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#adb273e537ef6873f48ad16a891dbab5c">renderHistoryItem</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *item);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a3fe2486f418e128defabdfae9a38147a">renderHistoryTableEnd</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a5b3ce2520a9d3c9f0467f0948fe835c7">renderEmptyHistoryTable</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a5dfa3038e194719f8f65e5090a02fc0d">renderHistoryListOptions</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ab7ca542d37d665aa448d9a8c73f24789">renderHistoryList</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead) ;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a6717481e048e628d7e7ae928f75e8d79">renderRemoveHistoryItemHeader</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">// SUM EXPENSES</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ac0a8fb1d4f1bae1214b72f683ae34734">renderYearAndMonthPrompt</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#af1192564313010bcd7285456c782aff1">renderSumOfExpenese</a>(<span class="keywordtype">float</span> sum);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">// BUYING</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="interface_8h.html#accd89f4cf4f23659d72424e5ba770e75">renderBuyItemHeader</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#aa319ab9f71bf5030ac7e721270a213c8">renderCostPrompt</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ae46bff6296efa83095f141dba6a5a8cf">renderDatePrompt</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ainterface_8h_html_aba87cce0f2ea84d9f27c251583e6534f"><div class="ttname"><a href="interface_8h.html#aba87cce0f2ea84d9f27c251583e6534f">renderShopItem</a></div><div class="ttdeci">void renderShopItem(shop_item *item)</div><div class="ttdef"><b>Definition:</b> interface.c:70</div></div>
+<div class="ttc" id="ainterface_8h_html_ab7ca542d37d665aa448d9a8c73f24789"><div class="ttname"><a href="interface_8h.html#ab7ca542d37d665aa448d9a8c73f24789">renderHistoryList</a></div><div class="ttdeci">void renderHistoryList(history_list_item *pHead)</div><div class="ttdef"><b>Definition:</b> interface.c:148</div></div>
+<div class="ttc" id="ainterface_8h_html_a97ae2670d374a882a73e0e4814678a92"><div class="ttname"><a href="interface_8h.html#a97ae2670d374a882a73e0e4814678a92">renderHistoryTableHeader</a></div><div class="ttdeci">void renderHistoryTableHeader()</div><div class="ttdef"><b>Definition:</b> interface.c:121</div></div>
+<div class="ttc" id="ainterface_8h_html_a24eb676f06118675cdabece05dca5ea1"><div class="ttname"><a href="interface_8h.html#a24eb676f06118675cdabece05dca5ea1">renderShoppingListOptions</a></div><div class="ttdeci">void renderShoppingListOptions()</div><div class="ttdef"><b>Definition:</b> interface.c:82</div></div>
+<div class="ttc" id="ainterface_8h_html_a20bbd4d45e3f01305dd709f5a9cc9952"><div class="ttname"><a href="interface_8h.html#a20bbd4d45e3f01305dd709f5a9cc9952">clearBuffer</a></div><div class="ttdeci">void clearBuffer()</div><div class="ttdef"><b>Definition:</b> interface.c:9</div></div>
+<div class="ttc" id="ainterface_8h_html_ae46bff6296efa83095f141dba6a5a8cf"><div class="ttname"><a href="interface_8h.html#ae46bff6296efa83095f141dba6a5a8cf">renderDatePrompt</a></div><div class="ttdeci">void renderDatePrompt()</div><div class="ttdef"><b>Definition:</b> interface.c:196</div></div>
+<div class="ttc" id="ainterface_8h_html_a6717481e048e628d7e7ae928f75e8d79"><div class="ttname"><a href="interface_8h.html#a6717481e048e628d7e7ae928f75e8d79">renderRemoveHistoryItemHeader</a></div><div class="ttdeci">void renderRemoveHistoryItemHeader()</div><div class="ttdef"><b>Definition:</b> interface.c:162</div></div>
+<div class="ttc" id="ainterface_8h_html_abd702390376d527d14c689dc2b21ff9d"><div class="ttname"><a href="interface_8h.html#abd702390376d527d14c689dc2b21ff9d">renderErrorNotFound</a></div><div class="ttdeci">void renderErrorNotFound()</div><div class="ttdef"><b>Definition:</b> interface.c:22</div></div>
+<div class="ttc" id="ainterface_8h_html_af1192564313010bcd7285456c782aff1"><div class="ttname"><a href="interface_8h.html#af1192564313010bcd7285456c782aff1">renderSumOfExpenese</a></div><div class="ttdeci">void renderSumOfExpenese(float sum)</div><div class="ttdef"><b>Definition:</b> interface.c:177</div></div>
+<div class="ttc" id="ainterface_8h_html_a78e361735746351cb5af84496b98373f"><div class="ttname"><a href="interface_8h.html#a78e361735746351cb5af84496b98373f">renderMenu</a></div><div class="ttdeci">void renderMenu()</div><div class="ttdef"><b>Definition:</b> interface.c:30</div></div>
+<div class="ttc" id="ainterface_8h_html_a5b3ce2520a9d3c9f0467f0948fe835c7"><div class="ttname"><a href="interface_8h.html#a5b3ce2520a9d3c9f0467f0948fe835c7">renderEmptyHistoryTable</a></div><div class="ttdeci">void renderEmptyHistoryTable()</div><div class="ttdef"><b>Definition:</b> interface.c:140</div></div>
+<div class="ttc" id="ainterface_8h_html_a5dfa3038e194719f8f65e5090a02fc0d"><div class="ttname"><a href="interface_8h.html#a5dfa3038e194719f8f65e5090a02fc0d">renderHistoryListOptions</a></div><div class="ttdeci">void renderHistoryListOptions()</div><div class="ttdef"><b>Definition:</b> interface.c:134</div></div>
+<div class="ttc" id="ainterface_8h_html_accd89f4cf4f23659d72424e5ba770e75"><div class="ttname"><a href="interface_8h.html#accd89f4cf4f23659d72424e5ba770e75">renderBuyItemHeader</a></div><div class="ttdeci">void renderBuyItemHeader()</div><div class="ttdef"><b>Definition:</b> interface.c:183</div></div>
+<div class="ttc" id="astructs_8h_html"><div class="ttname"><a href="structs_8h.html">structs.h</a></div></div>
+<div class="ttc" id="ainterface_8h_html_aa319ab9f71bf5030ac7e721270a213c8"><div class="ttname"><a href="interface_8h.html#aa319ab9f71bf5030ac7e721270a213c8">renderCostPrompt</a></div><div class="ttdeci">void renderCostPrompt()</div><div class="ttdef"><b>Definition:</b> interface.c:191</div></div>
+<div class="ttc" id="ainterface_8h_html_a40d87ad297ba26dc57b4bdce04fd61fa"><div class="ttname"><a href="interface_8h.html#a40d87ad297ba26dc57b4bdce04fd61fa">renderShoppingTableHeader</a></div><div class="ttdeci">void renderShoppingTableHeader()</div><div class="ttdef"><b>Definition:</b> interface.c:60</div></div>
+<div class="ttc" id="astructhistory__list__item_html"><div class="ttname"><a href="structhistory__list__item.html">history_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:32</div></div>
+<div class="ttc" id="ainterface_8h_html_a296306d02cb83f4cd338bee3039d98e5"><div class="ttname"><a href="interface_8h.html#a296306d02cb83f4cd338bee3039d98e5">renderDate</a></div><div class="ttdeci">void renderDate(buy_date *pDate)</div><div class="ttdef"><b>Definition:</b> interface.c:18</div></div>
+<div class="ttc" id="astructbuy__date_html"><div class="ttname"><a href="structbuy__date.html">buy_date</a></div><div class="ttdef"><b>Definition:</b> structs.h:23</div></div>
+<div class="ttc" id="ainterface_8h_html_a2ced83c2375375e535e4eaea868186ec"><div class="ttname"><a href="interface_8h.html#a2ced83c2375375e535e4eaea868186ec">renderShoppingList</a></div><div class="ttdeci">void renderShoppingList(shopping_list_item *pHead)</div><div class="ttdef"><b>Definition:</b> interface.c:89</div></div>
+<div class="ttc" id="ainterface_8h_html_ac0a8fb1d4f1bae1214b72f683ae34734"><div class="ttname"><a href="interface_8h.html#ac0a8fb1d4f1bae1214b72f683ae34734">renderYearAndMonthPrompt</a></div><div class="ttdeci">void renderYearAndMonthPrompt()</div><div class="ttdef"><b>Definition:</b> interface.c:172</div></div>
+<div class="ttc" id="ainterface_8h_html_a2d3920d2ad5eb567ede5184ca38e0442"><div class="ttname"><a href="interface_8h.html#a2d3920d2ad5eb567ede5184ca38e0442">renderShoppingTableEnd</a></div><div class="ttdeci">void renderShoppingTableEnd()</div><div class="ttdef"><b>Definition:</b> interface.c:66</div></div>
+<div class="ttc" id="ainterface_8h_html_ae3fe6985388a64bf6275863fe326fdcd"><div class="ttname"><a href="interface_8h.html#ae3fe6985388a64bf6275863fe326fdcd">renderAddShoppingItemHeader</a></div><div class="ttdeci">void renderAddShoppingItemHeader()</div><div class="ttdef"><b>Definition:</b> interface.c:103</div></div>
+<div class="ttc" id="aenums_8h_html"><div class="ttname"><a href="enums_8h.html">enums.h</a></div></div>
+<div class="ttc" id="aenums_8h_html_a149bab2b6af1b29ed2b958fceb68e2b1"><div class="ttname"><a href="enums_8h.html#a149bab2b6af1b29ed2b958fceb68e2b1">menuOptions</a></div><div class="ttdeci">menuOptions</div><div class="ttdef"><b>Definition:</b> enums.h:7</div></div>
+<div class="ttc" id="ainterface_8h_html_af0449e933bf4cf361da724f120276057"><div class="ttname"><a href="interface_8h.html#af0449e933bf4cf361da724f120276057">renderEmptyShoppingTable</a></div><div class="ttdeci">void renderEmptyShoppingTable()</div><div class="ttdef"><b>Definition:</b> interface.c:74</div></div>
+<div class="ttc" id="ainterface_8h_html_adb273e537ef6873f48ad16a891dbab5c"><div class="ttname"><a href="interface_8h.html#adb273e537ef6873f48ad16a891dbab5c">renderHistoryItem</a></div><div class="ttdeci">void renderHistoryItem(history_list_item *item)</div><div class="ttdef"><b>Definition:</b> interface.c:126</div></div>
+<div class="ttc" id="astructshop__item_html"><div class="ttname"><a href="structshop__item.html">shop_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:7</div></div>
+<div class="ttc" id="astructshopping__list__item_html"><div class="ttname"><a href="structshopping__list__item.html">shopping_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:15</div></div>
+<div class="ttc" id="ainterface_8h_html_adcbd2e81ec49276dbac8a78c892b2bf8"><div class="ttname"><a href="interface_8h.html#adcbd2e81ec49276dbac8a78c892b2bf8">renderRemoveShoppingItemHeader</a></div><div class="ttdeci">void renderRemoveShoppingItemHeader()</div><div class="ttdef"><b>Definition:</b> interface.c:111</div></div>
+<div class="ttc" id="ainterface_8h_html_a9d5e0af33487a0409c8b6e476a350a12"><div class="ttname"><a href="interface_8h.html#a9d5e0af33487a0409c8b6e476a350a12">renderPrompt</a></div><div class="ttdeci">void renderPrompt()</div><div class="ttdef"><b>Definition:</b> interface.c:14</div></div>
+<div class="ttc" id="ainterface_8h_html_a0bf463702494b765e50d1348692614e8"><div class="ttname"><a href="interface_8h.html#a0bf463702494b765e50d1348692614e8">handleMainMenu</a></div><div class="ttdeci">menuOptions handleMainMenu()</div><div class="ttdef"><b>Definition:</b> interface.c:42</div></div>
+<div class="ttc" id="ainterface_8h_html_a3fe2486f418e128defabdfae9a38147a"><div class="ttname"><a href="interface_8h.html#a3fe2486f418e128defabdfae9a38147a">renderHistoryTableEnd</a></div><div class="ttdeci">void renderHistoryTableEnd()</div><div class="ttdef"><b>Definition:</b> interface.c:130</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

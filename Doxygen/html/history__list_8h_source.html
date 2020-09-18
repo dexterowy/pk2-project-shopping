@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zakupy: Plik źródłowy history_list.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zakupy
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">history_list.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="history__list_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HISTORY_LIST</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HISTORY_LIST</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="structs_8h.html">structs.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="history__list_8h.html#a0c5bce7658f075e409b28105de4d9d2d">splitStringToDate</a>(<a class="code" href="structbuy__date.html">buy_date</a> *pDate, <span class="keywordtype">char</span> *line);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="history__list_8h.html#a75c672940d50787a0899be6a8bcc495f">splitStringToYearAndMonth</a>(<span class="keywordtype">char</span> *year, <span class="keywordtype">char</span> *month, <span class="keywordtype">char</span>*line);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="structhistory__list__item.html">history_list_item</a> * <a class="code" href="history__list_8h.html#a5cc8c2060d1ba1c95bd060cc0b7993b8">getHistoryListFromFile</a>(<span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="history__list_8h.html#a331e2d811b83c8eddda8d79ff8257869">saveHistoryListIntoFile</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead, <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="history__list_8h.html#a82ebe0a5b4546306b6827477030f15e8">deleteHistoryList</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> **pHead);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="structhistory__list__item.html">history_list_item</a> *<a class="code" href="history__list_8h.html#ae05eb159cb302e29c49448555cb5b596">removeFromHistoryList</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<a class="code" href="structhistory__list__item.html">history_list_item</a> *<a class="code" href="history__list_8h.html#ac84255d4ae28869d1fb7f96250e36fcc">addToHistoryList</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead, <a class="code" href="structshop__item.html">shop_item</a> *pItem, <span class="keywordtype">float</span> price, <a class="code" href="structbuy__date.html">buy_date</a> *pDate);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="structhistory__list__item.html">history_list_item</a> *<a class="code" href="history__list_8h.html#a86eed3c1becc5caf68604d287439f961">handleRemoveFromHistoryList</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="history__list_8h.html#aec1a8e4e303e0285c8baeacae3041f8c">historyListHandler</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> **pHead);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">float</span> <a class="code" href="history__list_8h.html#ae06b0e3fc0e4b23e0f318567d9b564c9">sumExpensesInMonth</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead, <span class="keywordtype">char</span> *month, <span class="keywordtype">char</span> *year);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="history__list_8h.html#ab65b99c00e17f3abadc8ca9f9d170415">handleSumExpensesInMonth</a>(<a class="code" href="structhistory__list__item.html">history_list_item</a> *pHead);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ahistory__list_8h_html_a5cc8c2060d1ba1c95bd060cc0b7993b8"><div class="ttname"><a href="history__list_8h.html#a5cc8c2060d1ba1c95bd060cc0b7993b8">getHistoryListFromFile</a></div><div class="ttdeci">history_list_item * getHistoryListFromFile(char *filename)</div><div class="ttdef"><b>Definition:</b> history_list.c:22</div></div>
+<div class="ttc" id="ahistory__list_8h_html_a0c5bce7658f075e409b28105de4d9d2d"><div class="ttname"><a href="history__list_8h.html#a0c5bce7658f075e409b28105de4d9d2d">splitStringToDate</a></div><div class="ttdeci">void splitStringToDate(buy_date *pDate, char *line)</div><div class="ttdef"><b>Definition:</b> history_list.c:8</div></div>
+<div class="ttc" id="ahistory__list_8h_html_ae05eb159cb302e29c49448555cb5b596"><div class="ttname"><a href="history__list_8h.html#ae05eb159cb302e29c49448555cb5b596">removeFromHistoryList</a></div><div class="ttdeci">history_list_item * removeFromHistoryList(history_list_item *pHead, int id)</div><div class="ttdef"><b>Definition:</b> history_list.c:106</div></div>
+<div class="ttc" id="ahistory__list_8h_html_aec1a8e4e303e0285c8baeacae3041f8c"><div class="ttname"><a href="history__list_8h.html#aec1a8e4e303e0285c8baeacae3041f8c">historyListHandler</a></div><div class="ttdeci">void historyListHandler(history_list_item **pHead)</div><div class="ttdef"><b>Definition:</b> history_list.c:186</div></div>
+<div class="ttc" id="ahistory__list_8h_html_a86eed3c1becc5caf68604d287439f961"><div class="ttname"><a href="history__list_8h.html#a86eed3c1becc5caf68604d287439f961">handleRemoveFromHistoryList</a></div><div class="ttdeci">history_list_item * handleRemoveFromHistoryList(history_list_item *pHead)</div><div class="ttdef"><b>Definition:</b> history_list.c:164</div></div>
+<div class="ttc" id="astructs_8h_html"><div class="ttname"><a href="structs_8h.html">structs.h</a></div></div>
+<div class="ttc" id="astructhistory__list__item_html"><div class="ttname"><a href="structhistory__list__item.html">history_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:32</div></div>
+<div class="ttc" id="astructbuy__date_html"><div class="ttname"><a href="structbuy__date.html">buy_date</a></div><div class="ttdef"><b>Definition:</b> structs.h:23</div></div>
+<div class="ttc" id="ahistory__list_8h_html_a82ebe0a5b4546306b6827477030f15e8"><div class="ttname"><a href="history__list_8h.html#a82ebe0a5b4546306b6827477030f15e8">deleteHistoryList</a></div><div class="ttdeci">void deleteHistoryList(history_list_item **pHead)</div><div class="ttdef"><b>Definition:</b> history_list.c:91</div></div>
+<div class="ttc" id="ahistory__list_8h_html_ac84255d4ae28869d1fb7f96250e36fcc"><div class="ttname"><a href="history__list_8h.html#ac84255d4ae28869d1fb7f96250e36fcc">addToHistoryList</a></div><div class="ttdeci">history_list_item * addToHistoryList(history_list_item *pHead, shop_item *pItem, float price, buy_date *pDate)</div><div class="ttdef"><b>Definition:</b> history_list.c:136</div></div>
+<div class="ttc" id="astructshop__item_html"><div class="ttname"><a href="structshop__item.html">shop_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:7</div></div>
+<div class="ttc" id="ahistory__list_8h_html_ae06b0e3fc0e4b23e0f318567d9b564c9"><div class="ttname"><a href="history__list_8h.html#ae06b0e3fc0e4b23e0f318567d9b564c9">sumExpensesInMonth</a></div><div class="ttdeci">float sumExpensesInMonth(history_list_item *pHead, char *month, char *year)</div><div class="ttdef"><b>Definition:</b> history_list.c:150</div></div>
+<div class="ttc" id="ahistory__list_8h_html_a331e2d811b83c8eddda8d79ff8257869"><div class="ttname"><a href="history__list_8h.html#a331e2d811b83c8eddda8d79ff8257869">saveHistoryListIntoFile</a></div><div class="ttdeci">void saveHistoryListIntoFile(history_list_item *pHead, char *filename)</div><div class="ttdef"><b>Definition:</b> history_list.c:66</div></div>
+<div class="ttc" id="ahistory__list_8h_html_a75c672940d50787a0899be6a8bcc495f"><div class="ttname"><a href="history__list_8h.html#a75c672940d50787a0899be6a8bcc495f">splitStringToYearAndMonth</a></div><div class="ttdeci">void splitStringToYearAndMonth(char *year, char *month, char *line)</div><div class="ttdef"><b>Definition:</b> history_list.c:16</div></div>
+<div class="ttc" id="ahistory__list_8h_html_ab65b99c00e17f3abadc8ca9f9d170415"><div class="ttname"><a href="history__list_8h.html#ab65b99c00e17f3abadc8ca9f9d170415">handleSumExpensesInMonth</a></div><div class="ttdeci">void handleSumExpensesInMonth(history_list_item *pHead)</div><div class="ttdef"><b>Definition:</b> history_list.c:173</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

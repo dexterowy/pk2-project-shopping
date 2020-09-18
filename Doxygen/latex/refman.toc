@@ -1,0 +1,156 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Indeks struktur danych}{1}%
+\contentsline {section}{\numberline {1.1}Struktury danych}{1}%
+\contentsline {chapter}{\numberline {2}Indeks plików}{3}%
+\contentsline {section}{\numberline {2.1}Lista plików}{3}%
+\contentsline {chapter}{\numberline {3}Dokumentacja struktur danych}{5}%
+\contentsline {section}{\numberline {3.1}Dokumentacja struktury buy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}date}{5}%
+\contentsline {subsection}{\numberline {3.1.1}Opis szczegółowy}{5}%
+\contentsline {subsection}{\numberline {3.1.2}Dokumentacja pól}{5}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}day}{5}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}month}{6}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}year}{6}%
+\contentsline {section}{\numberline {3.2}Dokumentacja struktury history\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}list\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item}{6}%
+\contentsline {subsection}{\numberline {3.2.1}Opis szczegółowy}{6}%
+\contentsline {subsection}{\numberline {3.2.2}Dokumentacja pól}{6}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}pDate}{7}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}pItem}{7}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}pNext}{7}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}price}{7}%
+\contentsline {section}{\numberline {3.3}Dokumentacja struktury shop\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item}{7}%
+\contentsline {subsection}{\numberline {3.3.1}Opis szczegółowy}{8}%
+\contentsline {subsection}{\numberline {3.3.2}Dokumentacja pól}{8}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}id}{8}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}name}{8}%
+\contentsline {section}{\numberline {3.4}Dokumentacja struktury shopping\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}list\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}item}{8}%
+\contentsline {subsection}{\numberline {3.4.1}Opis szczegółowy}{8}%
+\contentsline {subsection}{\numberline {3.4.2}Dokumentacja pól}{8}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}pItem}{9}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}pNext}{9}%
+\contentsline {chapter}{\numberline {4}Dokumentacja plików}{11}%
+\contentsline {section}{\numberline {4.1}Dokumentacja pliku enums.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{11}%
+\contentsline {subsection}{\numberline {4.1.1}Dokumentacja typów wyliczanych}{11}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}menuOptions}{11}%
+\contentsline {section}{\numberline {4.2}Dokumentacja pliku helpers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{11}%
+\contentsline {subsection}{\numberline {4.2.1}Dokumentacja funkcji}{12}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}trimLine()}{12}%
+\contentsline {section}{\numberline {4.3}Dokumentacja pliku helpers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{12}%
+\contentsline {subsection}{\numberline {4.3.1}Dokumentacja funkcji}{12}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}trimLine()}{12}%
+\contentsline {section}{\numberline {4.4}Dokumentacja pliku history\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}list.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{12}%
+\contentsline {subsection}{\numberline {4.4.1}Dokumentacja funkcji}{13}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}addToHistoryList()}{13}%
+\contentsline {subsubsection}{\numberline {4.4.1.2}deleteHistoryList()}{13}%
+\contentsline {subsubsection}{\numberline {4.4.1.3}getHistoryListFromFile()}{15}%
+\contentsline {subsubsection}{\numberline {4.4.1.4}handleRemoveFromHistoryList()}{15}%
+\contentsline {subsubsection}{\numberline {4.4.1.5}handleSumExpensesInMonth()}{15}%
+\contentsline {subsubsection}{\numberline {4.4.1.6}historyListHandler()}{16}%
+\contentsline {subsubsection}{\numberline {4.4.1.7}removeFromHistoryList()}{16}%
+\contentsline {subsubsection}{\numberline {4.4.1.8}saveHistoryListIntoFile()}{16}%
+\contentsline {subsubsection}{\numberline {4.4.1.9}splitStringToDate()}{17}%
+\contentsline {subsubsection}{\numberline {4.4.1.10}splitStringToYearAndMonth()}{17}%
+\contentsline {subsubsection}{\numberline {4.4.1.11}sumExpensesInMonth()}{17}%
+\contentsline {section}{\numberline {4.5}Dokumentacja pliku history\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}list.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{18}%
+\contentsline {subsection}{\numberline {4.5.1}Dokumentacja funkcji}{18}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}addToHistoryList()}{18}%
+\contentsline {subsubsection}{\numberline {4.5.1.2}deleteHistoryList()}{19}%
+\contentsline {subsubsection}{\numberline {4.5.1.3}getHistoryListFromFile()}{19}%
+\contentsline {subsubsection}{\numberline {4.5.1.4}handleRemoveFromHistoryList()}{19}%
+\contentsline {subsubsection}{\numberline {4.5.1.5}handleSumExpensesInMonth()}{20}%
+\contentsline {subsubsection}{\numberline {4.5.1.6}historyListHandler()}{20}%
+\contentsline {subsubsection}{\numberline {4.5.1.7}removeFromHistoryList()}{20}%
+\contentsline {subsubsection}{\numberline {4.5.1.8}saveHistoryListIntoFile()}{21}%
+\contentsline {subsubsection}{\numberline {4.5.1.9}splitStringToDate()}{21}%
+\contentsline {subsubsection}{\numberline {4.5.1.10}splitStringToYearAndMonth()}{21}%
+\contentsline {subsubsection}{\numberline {4.5.1.11}sumExpensesInMonth()}{22}%
+\contentsline {section}{\numberline {4.6}Dokumentacja pliku interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{22}%
+\contentsline {subsection}{\numberline {4.6.1}Dokumentacja funkcji}{23}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}clearBuffer()}{23}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}handleMainMenu()}{23}%
+\contentsline {subsubsection}{\numberline {4.6.1.3}renderAddShoppingItemHeader()}{23}%
+\contentsline {subsubsection}{\numberline {4.6.1.4}renderBuyItemHeader()}{23}%
+\contentsline {subsubsection}{\numberline {4.6.1.5}renderCostPrompt()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.6}renderDate()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.7}renderDatePrompt()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.8}renderEmptyHistoryTable()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.9}renderEmptyShoppingTable()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.10}renderErrorNotFound()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.11}renderHistoryItem()}{24}%
+\contentsline {subsubsection}{\numberline {4.6.1.12}renderHistoryList()}{25}%
+\contentsline {subsubsection}{\numberline {4.6.1.13}renderHistoryListOptions()}{25}%
+\contentsline {subsubsection}{\numberline {4.6.1.14}renderHistoryTableEnd()}{25}%
+\contentsline {subsubsection}{\numberline {4.6.1.15}renderHistoryTableHeader()}{25}%
+\contentsline {subsubsection}{\numberline {4.6.1.16}renderMenu()}{25}%
+\contentsline {subsubsection}{\numberline {4.6.1.17}renderPrompt()}{26}%
+\contentsline {subsubsection}{\numberline {4.6.1.18}renderRemoveHistoryItemHeader()}{26}%
+\contentsline {subsubsection}{\numberline {4.6.1.19}renderRemoveShoppingItemHeader()}{26}%
+\contentsline {subsubsection}{\numberline {4.6.1.20}renderShopItem()}{26}%
+\contentsline {subsubsection}{\numberline {4.6.1.21}renderShoppingList()}{26}%
+\contentsline {subsubsection}{\numberline {4.6.1.22}renderShoppingListOptions()}{26}%
+\contentsline {subsubsection}{\numberline {4.6.1.23}renderShoppingTableEnd()}{27}%
+\contentsline {subsubsection}{\numberline {4.6.1.24}renderShoppingTableHeader()}{27}%
+\contentsline {subsubsection}{\numberline {4.6.1.25}renderSumOfExpenese()}{27}%
+\contentsline {subsubsection}{\numberline {4.6.1.26}renderYearAndMonthPrompt()}{27}%
+\contentsline {section}{\numberline {4.7}Dokumentacja pliku interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{27}%
+\contentsline {subsection}{\numberline {4.7.1}Dokumentacja funkcji}{28}%
+\contentsline {subsubsection}{\numberline {4.7.1.1}clearBuffer()}{28}%
+\contentsline {subsubsection}{\numberline {4.7.1.2}handleMainMenu()}{28}%
+\contentsline {subsubsection}{\numberline {4.7.1.3}renderAddShoppingItemHeader()}{28}%
+\contentsline {subsubsection}{\numberline {4.7.1.4}renderBuyItemHeader()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.5}renderCostPrompt()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.6}renderDate()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.7}renderDatePrompt()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.8}renderEmptyHistoryTable()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.9}renderEmptyShoppingTable()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.10}renderErrorNotFound()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.11}renderHistoryItem()}{29}%
+\contentsline {subsubsection}{\numberline {4.7.1.12}renderHistoryList()}{30}%
+\contentsline {subsubsection}{\numberline {4.7.1.13}renderHistoryListOptions()}{30}%
+\contentsline {subsubsection}{\numberline {4.7.1.14}renderHistoryTableEnd()}{30}%
+\contentsline {subsubsection}{\numberline {4.7.1.15}renderHistoryTableHeader()}{30}%
+\contentsline {subsubsection}{\numberline {4.7.1.16}renderMenu()}{30}%
+\contentsline {subsubsection}{\numberline {4.7.1.17}renderPrompt()}{31}%
+\contentsline {subsubsection}{\numberline {4.7.1.18}renderRemoveHistoryItemHeader()}{31}%
+\contentsline {subsubsection}{\numberline {4.7.1.19}renderRemoveShoppingItemHeader()}{31}%
+\contentsline {subsubsection}{\numberline {4.7.1.20}renderShopItem()}{31}%
+\contentsline {subsubsection}{\numberline {4.7.1.21}renderShoppingList()}{31}%
+\contentsline {subsubsection}{\numberline {4.7.1.22}renderShoppingListOptions()}{31}%
+\contentsline {subsubsection}{\numberline {4.7.1.23}renderShoppingTableEnd()}{32}%
+\contentsline {subsubsection}{\numberline {4.7.1.24}renderShoppingTableHeader()}{32}%
+\contentsline {subsubsection}{\numberline {4.7.1.25}renderSumOfExpenese()}{32}%
+\contentsline {subsubsection}{\numberline {4.7.1.26}renderYearAndMonthPrompt()}{32}%
+\contentsline {section}{\numberline {4.8}Dokumentacja pliku main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{32}%
+\contentsline {subsection}{\numberline {4.8.1}Dokumentacja funkcji}{33}%
+\contentsline {subsubsection}{\numberline {4.8.1.1}main()}{33}%
+\contentsline {section}{\numberline {4.9}Dokumentacja pliku mockup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}historia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt}{33}%
+\contentsline {section}{\numberline {4.10}Dokumentacja pliku mockup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}lista.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt}{33}%
+\contentsline {section}{\numberline {4.11}Dokumentacja pliku shopping\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}list.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{33}%
+\contentsline {subsection}{\numberline {4.11.1}Dokumentacja funkcji}{33}%
+\contentsline {subsubsection}{\numberline {4.11.1.1}addShopingItemToList()}{33}%
+\contentsline {subsubsection}{\numberline {4.11.1.2}deleteShoppingList()}{34}%
+\contentsline {subsubsection}{\numberline {4.11.1.3}detachItemFromShoppingList()}{34}%
+\contentsline {subsubsection}{\numberline {4.11.1.4}getShoppingListFromFile()}{34}%
+\contentsline {subsubsection}{\numberline {4.11.1.5}handleCreateShoppingItem()}{35}%
+\contentsline {subsubsection}{\numberline {4.11.1.6}handleMarkAsBought()}{35}%
+\contentsline {subsubsection}{\numberline {4.11.1.7}handleRemoveFromShoppingList()}{35}%
+\contentsline {subsubsection}{\numberline {4.11.1.8}removeFromShoppingList()}{36}%
+\contentsline {subsubsection}{\numberline {4.11.1.9}saveShoppingListIntoFile()}{36}%
+\contentsline {subsubsection}{\numberline {4.11.1.10}shoppingListHandler()}{36}%
+\contentsline {section}{\numberline {4.12}Dokumentacja pliku shopping\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}list.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}%
+\contentsline {subsection}{\numberline {4.12.1}Dokumentacja funkcji}{37}%
+\contentsline {subsubsection}{\numberline {4.12.1.1}addShopingItemToList()}{37}%
+\contentsline {subsubsection}{\numberline {4.12.1.2}deleteShoppingList()}{37}%
+\contentsline {subsubsection}{\numberline {4.12.1.3}detachItemFromShoppingList()}{39}%
+\contentsline {subsubsection}{\numberline {4.12.1.4}getShoppingListFromFile()}{39}%
+\contentsline {subsubsection}{\numberline {4.12.1.5}handleCreateShoppingItem()}{39}%
+\contentsline {subsubsection}{\numberline {4.12.1.6}handleMarkAsBought()}{40}%
+\contentsline {subsubsection}{\numberline {4.12.1.7}handleRemoveFromShoppingList()}{40}%
+\contentsline {subsubsection}{\numberline {4.12.1.8}removeFromShoppingList()}{40}%
+\contentsline {subsubsection}{\numberline {4.12.1.9}saveShoppingListIntoFile()}{41}%
+\contentsline {subsubsection}{\numberline {4.12.1.10}shoppingListHandler()}{41}%
+\contentsline {section}{\numberline {4.13}Dokumentacja pliku structs.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}%
+\contentsline {subsection}{\numberline {4.13.1}Dokumentacja definicji typów}{42}%
+\contentsline {subsubsection}{\numberline {4.13.1.1}history\_list\_item}{42}%
+\contentsline {subsubsection}{\numberline {4.13.1.2}shopping\_list\_item}{42}%
+\contentsline {chapter}{Indeks}{43}%

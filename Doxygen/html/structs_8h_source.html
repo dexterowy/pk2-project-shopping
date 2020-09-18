@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zakupy: Plik źródłowy structs.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zakupy
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">structs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="structs_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STRUCTS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STRUCTS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structshop__item.html">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structshop__item.html#a7441ef0865bcb3db9b8064dd7375c1ea">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structshop__item.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structshop__item.html#a6db5324e662b3f6727875212f7aa6359">    9</a></span>&#160;    <span class="keywordtype">char</span> name[255]; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;} <a class="code" href="structshop__item.html">shop_item</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structshopping__list__item.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structshopping__list__item.html">shopping_list_item</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structshopping__list__item.html#a85be420f09b50c4f7bb18c1d9f9008fd">   16</a></span>&#160;    <a class="code" href="structshop__item.html">shop_item</a>* <a class="code" href="structshopping__list__item.html#a85be420f09b50c4f7bb18c1d9f9008fd">pItem</a> ; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structshopping__list__item.html#a5d9fb79f85e399ed270de908028fe916">   17</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structshopping__list__item.html">shopping_list_item</a>* <a class="code" href="structshopping__list__item.html#a5d9fb79f85e399ed270de908028fe916">pNext</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structs_8h.html#af02ab9ba5d778cf6d8045080123cbbe0">   18</a></span>&#160;} <a class="code" href="structs_8h.html#af02ab9ba5d778cf6d8045080123cbbe0">shopping_list_item</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structbuy__date.html">   23</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structbuy__date.html#a95b3ff6ee5dc1e4284542a69f07694b1">   24</a></span>&#160;    <span class="keywordtype">char</span> year[5]; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structbuy__date.html#aec1fe378fc397ad1c0ddbeb7ba8a9e47">   25</a></span>&#160;    <span class="keywordtype">char</span> month[3]; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structbuy__date.html#ad3dbfb6e1a8df68ad45feed1ba256ec4">   26</a></span>&#160;    <span class="keywordtype">char</span> day[3]; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="structbuy__date.html">buy_date</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structhistory__list__item.html">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structhistory__list__item.html">history_list_item</a>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structhistory__list__item.html#a85be420f09b50c4f7bb18c1d9f9008fd">   33</a></span>&#160;    <a class="code" href="structshop__item.html">shop_item</a>* <a class="code" href="structhistory__list__item.html#a85be420f09b50c4f7bb18c1d9f9008fd">pItem</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structhistory__list__item.html#ab8f17a4257646b915fc5140832e54568">   34</a></span>&#160;    <a class="code" href="structbuy__date.html">buy_date</a>* <a class="code" href="structhistory__list__item.html#ab8f17a4257646b915fc5140832e54568">pDate</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structhistory__list__item.html#a500426aec97889b7572f25ae45c06a8d">   35</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structhistory__list__item.html#a500426aec97889b7572f25ae45c06a8d">price</a>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structhistory__list__item.html#a8d4308afc3918f9eb09902cc4df5c513">   36</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structhistory__list__item.html">history_list_item</a>* <a class="code" href="structhistory__list__item.html#a8d4308afc3918f9eb09902cc4df5c513">pNext</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structs_8h.html#a0e9219f47121617dacc740ed629ce86d">   37</a></span>&#160;} <a class="code" href="structs_8h.html#a0e9219f47121617dacc740ed629ce86d">history_list_item</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructhistory__list__item_html_a500426aec97889b7572f25ae45c06a8d"><div class="ttname"><a href="structhistory__list__item.html#a500426aec97889b7572f25ae45c06a8d">history_list_item::price</a></div><div class="ttdeci">float price</div><div class="ttdoc">Cena kupna.</div><div class="ttdef"><b>Definition:</b> structs.h:35</div></div>
+<div class="ttc" id="astructhistory__list__item_html_a8d4308afc3918f9eb09902cc4df5c513"><div class="ttname"><a href="structhistory__list__item.html#a8d4308afc3918f9eb09902cc4df5c513">history_list_item::pNext</a></div><div class="ttdeci">struct history_list_item * pNext</div><div class="ttdoc">Wskaznik na nastepny element listy.</div><div class="ttdef"><b>Definition:</b> structs.h:36</div></div>
+<div class="ttc" id="astructhistory__list__item_html_ab8f17a4257646b915fc5140832e54568"><div class="ttname"><a href="structhistory__list__item.html#ab8f17a4257646b915fc5140832e54568">history_list_item::pDate</a></div><div class="ttdeci">buy_date * pDate</div><div class="ttdoc">Wskaznik na strukture daty zakupu.</div><div class="ttdef"><b>Definition:</b> structs.h:34</div></div>
+<div class="ttc" id="astructshopping__list__item_html_a85be420f09b50c4f7bb18c1d9f9008fd"><div class="ttname"><a href="structshopping__list__item.html#a85be420f09b50c4f7bb18c1d9f9008fd">shopping_list_item::pItem</a></div><div class="ttdeci">shop_item * pItem</div><div class="ttdoc">Wskaznik na przedmiot.</div><div class="ttdef"><b>Definition:</b> structs.h:16</div></div>
+<div class="ttc" id="astructshop__item_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="structshop__item.html#a7441ef0865bcb3db9b8064dd7375c1ea">shop_item::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Identyfikator.</div><div class="ttdef"><b>Definition:</b> structs.h:8</div></div>
+<div class="ttc" id="astructhistory__list__item_html"><div class="ttname"><a href="structhistory__list__item.html">history_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:32</div></div>
+<div class="ttc" id="astructs_8h_html_a0e9219f47121617dacc740ed629ce86d"><div class="ttname"><a href="structs_8h.html#a0e9219f47121617dacc740ed629ce86d">history_list_item</a></div><div class="ttdeci">struct history_list_item history_list_item</div></div>
+<div class="ttc" id="astructbuy__date_html"><div class="ttname"><a href="structbuy__date.html">buy_date</a></div><div class="ttdef"><b>Definition:</b> structs.h:23</div></div>
+<div class="ttc" id="astructshopping__list__item_html_a5d9fb79f85e399ed270de908028fe916"><div class="ttname"><a href="structshopping__list__item.html#a5d9fb79f85e399ed270de908028fe916">shopping_list_item::pNext</a></div><div class="ttdeci">struct shopping_list_item * pNext</div><div class="ttdoc">Wskaznik na nastepny element listy.</div><div class="ttdef"><b>Definition:</b> structs.h:17</div></div>
+<div class="ttc" id="astructs_8h_html_af02ab9ba5d778cf6d8045080123cbbe0"><div class="ttname"><a href="structs_8h.html#af02ab9ba5d778cf6d8045080123cbbe0">shopping_list_item</a></div><div class="ttdeci">struct shopping_list_item shopping_list_item</div></div>
+<div class="ttc" id="astructshop__item_html"><div class="ttname"><a href="structshop__item.html">shop_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:7</div></div>
+<div class="ttc" id="astructshopping__list__item_html"><div class="ttname"><a href="structshopping__list__item.html">shopping_list_item</a></div><div class="ttdef"><b>Definition:</b> structs.h:15</div></div>
+<div class="ttc" id="astructhistory__list__item_html_a85be420f09b50c4f7bb18c1d9f9008fd"><div class="ttname"><a href="structhistory__list__item.html#a85be420f09b50c4f7bb18c1d9f9008fd">history_list_item::pItem</a></div><div class="ttdeci">shop_item * pItem</div><div class="ttdoc">Wskaznik na przedmiot.</div><div class="ttdef"><b>Definition:</b> structs.h:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>
