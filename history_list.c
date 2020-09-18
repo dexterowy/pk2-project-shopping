@@ -35,7 +35,7 @@ history_list_item * getHistoryListFromFile(char *filename) {
         return NULL;
     }
 
-    while( fgets (line, 250, listFile)!=NULL ) {
+    while( fgets (line, 250, listFile)!=NULL && strlen(line)) {
         history_list_item *pNode = (history_list_item*)malloc(sizeof(history_list_item));
         if(pHead == NULL) {
             pHead = pPrev = pNode;
@@ -89,7 +89,7 @@ void saveHistoryListIntoFile(history_list_item *pHead, char *filename) {
 }
 
 void deleteHistoryList(history_list_item **pHead) {
-    if(pHead != NULL) {
+    if(*pHead != NULL) {
         history_list_item *pNode = *pHead;
         history_list_item *pNext = (*pHead)->pNext;
         while(pNode) {
